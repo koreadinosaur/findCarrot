@@ -57,6 +57,17 @@ i {
   margin: auto;
   border-radius: 10px;
 }
+#carrot,
+#bug {
+  top: 0;
+  position: absolute;
+  display: inline;
+}
+#carrot img,
+#bug img {
+  position: absolute;
+}
+
 .restart__button {
   padding: 10px;
 }
