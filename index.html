@@ -26,11 +26,19 @@
 
     <section id="carrot"></section>
     <section id="bug"></section>
-    <section id="result" class="hide">
-      <div class="result__lost">you lost</div>
-      <button class="restart__button">
-        <i class="fa-solid fa-rotate-left"></i>
-      </button>
-    </section>
+    <div id="resultContainer">
+      <section id="result" class="hide">
+        <div class="result__lost">you lost</div>
+        <button class="restart__button">
+          <i class="fa-solid fa-rotate-left restart__i--lost"></i>
+        </button>
+      </section>
+      <section id="resultWin" class="hide">
+        <div class="resultWin__words">You Win!</div>
+        <button class="resultWin__button">
+          <i class="fa-solid fa-rotate-left restart__i--win"></i>
+        </button>
+      </section>
+    </div>
   </body>
 </html>

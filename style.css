@@ -6,6 +6,8 @@ html {
 }
 
 body {
+  margin: 0;
+  max-height: 1297px;
   background: url("img/background.png") center/100% 100% no-repeat;
 }
 button {
@@ -49,7 +51,8 @@ i {
   border: 1px solid black;
   margin-top: 20px;
 }
-#result {
+#result,
+#resultWin {
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -73,10 +76,12 @@ i {
   position: absolute;
 }
 
-.restart__button {
+.restart__button,
+.resultWin__button {
   padding: 10px;
 }
-.result__lost {
+.result__lost,
+.resultWin__words {
   font-size: 50px;
   color: white;
 }
