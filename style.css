@@ -8,7 +8,13 @@ html {
 body {
   margin: 0;
   max-height: 1297px;
-  background: url("img/background.png") center/100% 100% no-repeat;
+}
+#gameBackground {
+  background: url("img/background.png") center/cover no-repeat;
+  width: 1200px;
+  height: 800px;
+  margin: auto;
+  margin-top: 100px;
 }
 button {
   background: tomato;
@@ -41,6 +47,7 @@ i {
   display: none;
 }
 .carrotCount {
+  background-color: wheat;
   font-size: 80px;
   border-radius: 50%;
   width: 120px;
@@ -51,8 +58,8 @@ i {
   border: 1px solid black;
   margin-top: 20px;
 }
-#result,
-#resultWin {
+#result {
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -63,25 +70,23 @@ i {
   border-radius: 10px;
 }
 .displayResult {
-  display: flex;
 }
-#carrot,
-#bug {
-  top: 0;
+#gameField {
+  margin-top: 20px;
+  width: inherit;
+  height: 400px;
   position: absolute;
-  display: inline;
 }
-#carrot img,
-#bug img {
+#gameField img {
   position: absolute;
 }
 
-.restart__button,
-.resultWin__button {
+.restart__button {
   padding: 10px;
+  z-index: 1;
 }
 .result__lost,
-.resultWin__words {
+.result__win {
   font-size: 50px;
   color: white;
 }

@@ -13,32 +13,21 @@
     ></script>
   </head>
   <body>
-    <section id="timer">
-      <button class="timer__button timer__playBtn">
-        <i class="fa-solid fa-play"></i>
-      </button>
-      <button class="timer__button timer__stopBtn hide">
-        <i class="fa-solid fa-stop"></i>
-      </button>
-      <div class="timer__time">10초</div>
-      <div class="carrotCount">0</div>
-    </section>
+    <section id="gameBackground">
+      <section id="timer">
+        <button class="timer__button timer__playBtn">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="timer__button timer__stopBtn hide">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+        <div class="timer__time">10초</div>
+        <div class="carrotCount">0</div>
+      </section>
 
-    <section id="carrot"></section>
-    <section id="bug"></section>
-    <div id="resultContainer">
-      <section id="result" class="hide">
-        <div class="result__lost">you lost</div>
-        <button class="restart__button">
-          <i class="fa-solid fa-rotate-left restart__i--lost"></i>
-        </button>
-      </section>
-      <section id="resultWin" class="hide">
-        <div class="resultWin__words">You Win!</div>
-        <button class="resultWin__button">
-          <i class="fa-solid fa-rotate-left restart__i--win"></i>
-        </button>
-      </section>
-    </div>
+      <section id="gameField"></section>
+      <section id="bug"></section>
+      <div id="resultContainer"></div>
+    </section>
   </body>
 </html>
